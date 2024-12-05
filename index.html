@@ -4,12 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        p {
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        li {
+            margin: 15px 0;
+            color: #34495e;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c3e50;
+        }
+
+        .contact p {
+            text-align: center;
+        }
+
+        .healthcare-trends {
+            background-color: #e8f4f8;
+        }
+
+        .trend-item {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Simple Page</h1>
-        <p>This is a basic webpage to demonstrate GitHub workflows.</p>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>We are a dedicated team focused on creating simple, effective web solutions.</p>
+        </section>
+        
+        <section class="healthcare-trends">
+            <h2>2024 Pediatric Healthcare Trends</h2>
+            <div class="trend-item">
+                <h3>Facility Design Evolution</h3>
+                <ul>
+                    <li>Enhanced interactivity and flexibility in facility design</li>
+                    <li>Focus on creating secure and engaging environments for young patients</li>
+                    <li>Integration of operational efficiency in creative design solutions</li>
+                </ul>
+            </div>
+            
+            <div class="trend-item">
+                <h3>Service Delivery Changes</h3>
+                <ul>
+                    <li>Shift towards optimizing hospital utilization across acute care, surgery, and emergency departments</li>
+                    <li>Implementation of new behavioral health specialty services</li>
+                    <li>Focus on reducing unnecessary hospitalizations while maintaining quality care</li>
+                </ul>
+            </div>
+
+            <div class="trend-item">
+                <h3>Workforce Innovations</h3>
+                <ul>
+                    <li>Adaptation to ongoing healthcare worker shortages</li>
+                    <li>Enhanced focus on staff retention and satisfaction</li>
+                    <li>Integration of technological solutions to support healthcare delivery</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="projects">
+            <h2>Project Highlights</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>Mobile Solutions</li>
+            </ul>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Email: info@example.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </section>
     </div>
 </body>
 </html>
