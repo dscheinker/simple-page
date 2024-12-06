@@ -3,13 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pediatric Drug Interactions Reference</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        .interaction-card {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #2c3e50;
+            border-radius: 4px;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .recommendation {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .reference {
+            font-size: 0.9em;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        .citation {
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Simple Page</h1>
-        <p>This is a basic webpage to demonstrate GitHub workflows.</p>
+        <h1>Critical Drug Interactions in Pediatric Care</h1>
+        
+        <div class="interaction-card">
+            <h2>Azole Antifungals and Immunosuppressants</h2>
+            <div class="warning">
+                <strong>Critical Interaction:</strong> Significant increases in immunosuppressant blood levels when combined with azole antifungals (especially voriconazole and posaconazole)
+            </div>
+            <div class="recommendation">
+                <strong>Management:</strong>
+                <ul>
+                    <li>Reduce immunosuppressant dose by 30-50% when initiating azole therapy</li>
+                    <li>Monitor immunosuppressant levels every 48-72 hours until stable</li>
+                    <li>Consider alternative antifungal classes in high-risk patients</li>
+                </ul>
+            </div>
+            <div class="reference">
+                Source: Triazole antifungal drug interactions-practical considerations for excellent prescribing
+                <div class="citation">Veringa A, et al. Br J Clin Pharmacol. 2024 Jan 31. PMID: 38629250</div>
+            </div>
+        </div>
+
+        <div class="interaction-card">
+            <h2>Oncology Drug Interactions</h2>
+            <div class="warning">
+                <strong>Critical Interaction:</strong> Multiple drug interactions in onco-hematological pediatric patients, particularly with supportive care medications
+            </div>
+            <div class="recommendation">
+                <strong>Management:</strong>
+                <ul>
+                    <li>Regular monitoring of drug levels for medications with narrow therapeutic windows</li>
+                    <li>Consider drug interaction databases for comprehensive screening</li>
+                    <li>Implement standardized monitoring protocols</li>
+                </ul>
+            </div>
+            <div class="reference">
+                Source: Pharmacoepidemiological study of drug-drug interactions in onco-hematological pediatric patients
+                <div class="citation">Fernández de Palencia Espinosa MA, et al. Med Clin (Barc). 2014 Dec 9;143(11):478-83. PMID: 25204258</div>
+            </div>
+        </div>
+
+        <div class="interaction-card">
+            <h2>Transplant Medication Interactions</h2>
+            <div class="warning">
+                <strong>Critical Interaction:</strong> Complex interactions between immunosuppressants and antifungal prophylaxis in pediatric transplant recipients
+            </div>
+            <div class="recommendation">
+                <strong>Management:</strong>
+                <ul>
+                    <li>Carefully evaluate transition between different azole antifungals</li>
+                    <li>Adjust immunosuppressant dosing proactively</li>
+                    <li>Regular therapeutic drug monitoring</li>
+                </ul>
+            </div>
+            <div class="reference">
+                Source: Pipeline of Novel Antifungals for Invasive Fungal Disease in Transplant Recipients: A Pediatric Perspective
+                <div class="citation">Fisher BT, et al. Journal of the Pediatric Infectious Diseases Society, Volume 13, Issue Supplement_1, March 2024, Pages S68–S77</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
